@@ -9,7 +9,7 @@ export default function AddUserComponent() {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
         const users = localStorage.getItem("users") ? JSON.parse(localStorage.getItem("users")) : [];
-        if (users.length > 0) {
+        if (users.length > 0 && users.length <= 20) {
             var index = users.findIndex(x => x.userEmail == data.userEmail);
 
             if (index === -1) {
