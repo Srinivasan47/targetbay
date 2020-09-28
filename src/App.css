@@ -1,0 +1,56 @@
+
+html,body{
+  background-color: #f0f4f7;
+}
+.user-form{
+  border: 2px dashed #ccc;
+    padding: 40px 20px;
+   margin: 15px 0;
+    background-color: #dfe6ed;
+}
+.app {
+    max-width: 960px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.trash::before{
+   display: block;
+  content: ' ';
+  background-image: url('./assets/icon/trash-2.svg');
+ background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.edit-user::before {
+  display: block;
+  content: ' ';
+  background-image: url('./assets/icon/edit.svg');
+  background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.user-tile{
+  border: 2px solid #c7d2db;
+    border-radius: 0;
+}
+.user-data{
+  display: inline-block;
+    padding: 0px 5px;
+}
+.error{
+  color: red;
+  font-size: 12px;
+}
+.card-body.edit-component {
+    padding: 7px 20px;
+}
+.swap-section {
+    margin-bottom: 7px;
+}
